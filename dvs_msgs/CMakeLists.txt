@@ -15,6 +15,8 @@ FILE(GLOB messages_to_build RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}/msg"
 add_message_files(
   FILES
   ${messages_to_build}
+  Event_PointCloud.msg
+  PointCloudEvent.msg
 )
 
 # build the header files from the msg files, and notify catkin about the dependencies
